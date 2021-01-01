@@ -1,0 +1,35 @@
+
+
+Body{background-color: hsla(0, 1%, 87%, 1);}
+header{background-color: hsla(0, 1%, 87%, 1);}
+nav{background-color: hsla(0, 1%, 87%, 1); border-bottom: 2px solid white;}
+
+a[href="index.html"]:link, a[href="index.html"]:visited{
+  background-color: hsla(0, 1%, 87%, 1);
+  color: gray;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}a[href="index.html"]:hover, a[href="index.html"]:active {background-color: hsla(0, 1%, 91%, 1);}
+
+a[href="about.html"]:link, a[href="about.html"]:visited{
+  background-color: hsla(0, 1%, 87%, 1);
+  color: gray;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}a[href="about.html"]:hover, a[href="about.html"]:active {background-color: hsla(0, 1%, 91%, 1);}
+
+
+h1{color: rgba(64, 64, 64, 1);}
+h2{color: rgba(64, 64, 64, 1);}
+h3{color: rgba(64, 64, 64, 1);}
+img{border-radius: 8px;}
+p{color: rgba(64, 64, 64, 1);}
+h3.top-border{border-top: 2px solid white; padding: 2px;}
+h3.bottom-border{border-bottom: 2px solid white; padding: 2px; width: 600px;}
+p.top-border{border-top: 1px solid white; padding: 2px;}
+p.top-border{border-bottom: 1px solid white; padding: 2px;}
+footer{background-color: white; padding: 25px 25px;}
