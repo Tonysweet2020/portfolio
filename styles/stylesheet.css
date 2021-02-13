@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto+Mono&display=swap');
+
 Body{
   margin: 5px;
   background-color: hsla(0, 1%, 87%, 1);
@@ -30,7 +32,8 @@ ul {list-style-type: none;
   padding: 0;
 }
 
-.li-menu{ display: inline;}
+.li-menu{ display: inline; font-family: 'Open Sans', sans-serif;}
+li{font-family: 'Roboto Mono', monospace;}
 
 .topic-box{
   height: 40px;
@@ -126,15 +129,15 @@ ul {list-style-type: none;
 
 
 
-h1{color: rgba(64, 64, 64, 1);}
-h2{color: rgba(64, 64, 64, 1);}
-h3{color: rgba(64, 64, 64, 1);}
+h1{color: rgba(64, 64, 64, 1); font-family: 'Open Sans', sans-serif; font-weight: 900;}
+h2{color: rgba(64, 64, 64, 1); font-family: 'Open Sans', sans-serif; font-weight: 900;}
+h3{color: rgba(64, 64, 64, 1); font-family: 'Open Sans', sans-serif; font-weight: 900;}
 img{border-radius: 8px;}
 img.top{vertical-align: top;}
 img.middle{vertical-align: middle;}
 img.bottom{vertical-align: bottom;}
 
-p{color: rgba(64, 64, 64, 1);}
+p{color: rgba(64, 64, 64, 1); font-family: 'Roboto Mono', monospace;}
 .p-width{width:90%;}
 h3.top-border{border-top: 2px solid white;
   padding: 2px;
