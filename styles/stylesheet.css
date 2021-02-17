@@ -33,8 +33,40 @@ ul {list-style-type: none;
 }
 
 .li-menu{ display: inline; font-family: 'Open Sans', sans-serif;}
-li{font-family: 'Roboto Mono', monospace;}
 
+li{
+  padding-bottom: 20px;
+}
+
+aside a:hover{
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+aside a{
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 1s;
+}
+
+p a:hover{
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+p a{
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 1s;
+}
 .topic-box{
   height: 40px;
   background: lightgray;
@@ -49,20 +81,20 @@ li{font-family: 'Roboto Mono', monospace;}
   align-items: flex-start;
 }
 .main-box{
-  height: 1000px;
+  height: 1100px;
   width: 1100px;
   /*border: 30px solid purple;*/
   background: lightgray;
 }
 .aside-box{
-  height: 1000px;
+  height: 1100px;
   width: 600px;
 /*  border: 30px solid purple;*/
   background: lightgray;
 }
 
 .main-container{
-  height: 1100px;
+  height: 1200px;
   background-color: lightgray;
   display:  flex;
   flex-direction: row;
@@ -132,10 +164,22 @@ li{font-family: 'Roboto Mono', monospace;}
 h1{color: rgba(64, 64, 64, 1); font-family: 'Open Sans', sans-serif; font-weight: 900;}
 h2{color: rgba(64, 64, 64, 1); font-family: 'Open Sans', sans-serif; font-weight: 900;}
 h3{color: rgba(64, 64, 64, 1); font-family: 'Open Sans', sans-serif; font-weight: 900;}
-img{border-radius: 8px;}
+
+img{
+  border-style: solid;
+  border-width: 5px;
+  transition: transform 2s;
+
+}
 img.top{vertical-align: top;}
 img.middle{vertical-align: middle;}
 img.bottom{vertical-align: bottom;}
+
+img:hover{
+  transform: rotate(360deg);
+
+
+}
 
 p{color: rgba(64, 64, 64, 1); font-family: 'Roboto Mono', monospace;}
 .p-width{width:90%;}
@@ -159,4 +203,22 @@ p.top-border{
 .fa-car{
   font-size: 100px;
   color: gray;
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+}
+.fa-car:hover{
+  font-size: 200px;
+  color: hsla(0, 100%, 50%, 1);
+}
+
+
+aside p:nth-child(odd){
+  background-color: hsla(225, 100%, 32%, 0.5);
+  color: hsla(0, 0%, 95%, 0.5);
+}
+
+aside ul li:nth-child(3n) {
+  background-color: hsla(60, 100%, 35%, 0.5);
 }
