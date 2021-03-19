@@ -18,6 +18,7 @@ a[href="index.html"]:link, a[href="index.html"]:visited{
   display: inline-block;
 }
 a[href="index.html"]:hover, a[href="index.html"]:active {background-color: hsla(0, 1%, 91%, 1);}
+
 a[href="about.html"]:link, a[href="about.html"]:visited{
   background-color: hsla(0, 1%, 87%, 1);
   color: gray;
@@ -31,6 +32,21 @@ ul {list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
+a[href="contact.html"]:link, a[href="contact.html"]:visited{
+  background-color: hsla(0, 1%, 87%, 1);
+  color: gray;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a[href="contact.html"]:hover, a[href="contact.html"]:active {background-color: hsla(0, 1%, 91%, 1);}
+ul {list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 .li-menu{ display: inline; font-family: 'Open Sans', sans-serif;}
 
@@ -221,4 +237,102 @@ aside p:nth-child(odd){
 
 aside ul li:nth-child(3n) {
   background-color: hsla(60, 100%, 35%, 0.5);
+}
+
+/* ---------------stying for Form ---------------------*/
+
+button, input, select, textarea{
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 0.9rem;
+
+}
+
+textarea{
+  color: hsl(0, 0%, 41%);
+}
+
+fieldset input{
+  display: inline;
+}
+fieldset{
+  border: none;
+}
+label, legend{
+  color: rgba(64, 64, 64, 1); font-family: 'Roboto Mono', monospace;
+}
+
+.input-box{
+    border-style: solid;
+    border-color: hsl(0, 0%, 50%);
+    width: 100%;
+}
+/* --------------- custom checkbox code  -------------------------------*/
+.checkbox input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* customize the labels */
+.checkbox label{
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* create a custon checkbox */
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eeeeee;
+}
+
+/* On mouse-over, add a gray background color */
+.checkbox label:hover input ~ .checkmark{
+  background-color: #ccc;
+  border-style: solid;
+  border-width: 0.2rem;
+}
+
+/* when the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark{
+  background-color: hsl(0, 0%, 40%);
+}
+
+/* cheate the checkmark/indicator (hidden when not checked) */
+.checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkmark:after{
+  display: block;
+}
+
+/*Style the checkmark/indicator */
+.checkbox .checkmark:after{
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

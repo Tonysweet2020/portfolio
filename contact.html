@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script src="https://kit.fontawesome.com/63635b8e3b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li class="li-menu"><a href="index.html">Home</a></li>
+          <li class="li-menu"><a href="about.html">About</a></li>
+          <li class="li-menu"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-container">
+      <div class="main-box">
+        <h2>Please complete the contact form below </h2>
+          <form method="GET">
+            <label>Your Name:
+              <input class="input-box" type="text" name="applicationName">
+            </label>
+            <label>Your Phone:
+              <input class="input-box" type="text" name="applicationPhone">
+            </label>
+            <label>Your Email:
+              <input class="input-box" type="email" name="applicationEmail">
+            </label>
+            <fieldset class="checkbox">
+              <label>Check this box if you would like us not to send you emails in the future regarding portfolio updates.
+                <input type="checkbox" name="contact-permission" value="contact-permission">
+                <span class="checkmark"></span>
+              </label>
+            </fieldset>
+
+            <label>Please tell us how we can help you.
+              <textarea class="input-box" name="applicantReason" rows="8" cols="100" placeholder="Enter up to 300 characters"></textarea>
+            </label>
+
+            <fieldset class="checkbox">
+              <legend>How did you here about us?</legend>
+              <label>Flyers
+                <input type="checkbox" name="ads" value="flyers">
+                <span class="checkmark"></span>
+              </label>
+              <label>Television
+                <input type="checkbox" name="ads" value="televison">
+                <span class="checkmark"></span>
+              </label>
+              <label>Internet
+                <input type="checkbox" name="ads" value="internet">
+                <span class="checkmark"></span>
+              </label>
+              <label>Social Media
+                <input type="checkbox" name="add" value="social-media">
+                <span class="checkmark"></span>
+              </label>
+              <label>Others
+                <input type="checkbox" name="ads" value="other-ads">
+                <span class="checkmark"></span>
+                </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Which is the way to contact you?</legend>
+              <label><input type="radio" name="contact-means" value="phone">Phone</label>
+              <label><input type="radio" name="contact-means" value="email">Email</label>
+              <label><input type="radio" name="contact-means" value="both">Either or Both</label>
+            </fieldset>
+            <input type="submit" value="Submit">
+          </form>
+
+      </div>
+    </div>
+    <div class="footer-container">
+      <footer class="footer-box">
+      <i class="fas fa-car"></i>
+      <p>Tony A., built 2020. All right reserved.</p>
+      <p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+      </p>
+    </footer>
+  </div>
+
+  </body>
+</html>
